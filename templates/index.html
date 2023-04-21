@@ -1,0 +1,22 @@
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Prediction</title>
+ </head>
+<body>
+<center>
+  <div class="login">
+  <h2>SALES PREDICTION</H2>
+   <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="age" placeholder="Enter the Age" required="required" />
+    	<input type="text" name="salary" placeholder="Enter the Salary" required="required" />
+        <button type="submit" class="button button2">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+ </div>
+ </center>
+</body>
+</html>
